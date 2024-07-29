@@ -13,6 +13,12 @@
   --main-white-text-color: #ffffff;
 }
 
+.tag-style {
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
 .main-container-wrapper {
   display: grid;
   place-items: center;
@@ -22,11 +28,12 @@
   position: relative;
   background: url("../img/hero-background.png");
   top: 20px;
-  height: 90vh;
+
   width: 80vw;
-  color: white;
+  color: var(--main-white-text-color);
   background-repeat: no-repeat;
-  padding: 30px 50px;
+  padding: 40px 50px 140px 50px;
+  overflow: hidden;
 }
 
 .main-container .show-products {
@@ -50,11 +57,11 @@
 
 .navbar ul {
   display: flex;
+  gap: 24px;
 }
 
 .navbar li {
   color: var(--main-white-text-color);
-  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -69,13 +76,46 @@
   margin-top: 90px;
 }
 
-.hero .natural-food {
-  font-size: 16px;
-  letter-spacing: 4px;
-}
-
 .hero .title-hero {
   font-weight: bolder;
   font-size: 72px;
   max-width: 580px;
+  margin-bottom: 12px;
+}
+
+.categories-container {
+  max-width: 1240px;
+  margin: 100px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.categories-container h2 {
+  font-size: 48px;
+  font-weight: normal;
+  max-width: 800px;
+}
+
+.categories-card-container {
+  display: flex;
+  gap: 30px;
+}
+
+.categories-container .categories-card {
+  background: url("../img/organicsFood.png");
+  background-repeat: no-repeat;
+  height: 400px;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-white-text-color);
+  text-align: center;
+}
+
+.categories-container .categories-card p {
+  font-size: 20px;
+  max-width: 300px;
 }
