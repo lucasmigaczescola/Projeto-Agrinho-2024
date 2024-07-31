@@ -38,6 +38,7 @@
 .main-container-wrapper {
   display: grid;
   place-items: center;
+  margin: 0 80px;
 }
 
 .main-container {
@@ -45,14 +46,17 @@
   background: url("../img/hero-background.png");
   top: 20px;
 
+  max-width: 1300px;
   width: 100%;
 
-  max-width: 1300px;
   color: var(--main-white-text-color);
   background-repeat: no-repeat;
   padding: 40px 50px 140px 50px;
   background-size: cover;
   border-radius: 24px;
+
+  @media (max-width: 1140px) {
+  }
 }
 
 .navbar {
@@ -60,6 +64,9 @@
   justify-content: space-between;
 
   align-items: center;
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
 }
 
 .navbar h2 {
@@ -70,6 +77,15 @@
 .navbar ul {
   display: flex;
   gap: 24px;
+  @media (max-width: 1140px) {
+    flex-direction: column;
+    gap: 12px;
+  }
+  @media (max-width: 680px) {
+    flex-direction: row;
+    margin-top: 24px;
+    gap: 24px;
+  }
 }
 
 .navbar li {
@@ -80,6 +96,12 @@
 
 .navbar li:hover {
   font-weight: 600;
+}
+
+.navbar .green-button {
+  @media (max-width: 1140px) {
+    display: none;
+  }
 }
 
 .main-container .logo-container {
@@ -98,10 +120,13 @@
   font-size: 72px;
   max-width: 580px;
   margin-bottom: 12px;
+  @media (max-width: 680px) {
+    font-size: 60px;
+  }
 }
 
 .categories-container-wrapper {
-  margin: 0 30px;
+  margin: 0 80px;
 }
 
 .categories-container {
@@ -122,6 +147,10 @@
 
 .categories-card-container {
   display: flex;
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    align-items: center;
+  }
   gap: 16px;
 }
 
@@ -146,7 +175,7 @@
 }
 
 .products-container-wrapper {
-  margin: 0 30px;
+  margin: 0 80px;
 }
 
 .products-container {
@@ -167,6 +196,9 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 20px;
+  @media (max-width: 1000px) {
+    grid-template-columns: auto auto;
+  }
 }
 
 .products-container .product-card {
@@ -237,12 +269,12 @@
 }
 
 .about-us-container-wrapper {
-  margin: 100px 30px 0 30px;
+  margin: 100px 80px 0 80px;
 }
 
 .about-us-container {
-  width: 100%;
   max-width: 1300px;
+
   padding: 40px 50px 140px 50px;
   border-radius: 24px;
   background-image: url("../img/about-us-bg-image.png");
@@ -256,6 +288,9 @@
   justify-content: center;
   margin: 0 auto;
   height: 542px;
+
+  @media (max-width: 1500px) {
+  }
 }
 
 .about-us-container h2 {
@@ -272,12 +307,12 @@
 }
 
 .cta-container-wrapper {
-  margin: 100px 30px 0 30px;
+  margin: 100px 80px 0 80px;
 }
 
 .cta-container {
   margin: 0 auto;
-  width: 100%;
+
   max-width: 1300px;
   padding: 40px 50px 40px 50px;
   border-radius: 24px;
@@ -285,6 +320,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .cta-container h2 {
@@ -295,11 +336,14 @@
 }
 
 .footer-wrapper {
-  margin: 0 30px;
+  margin: 0 80px;
 }
 
 .footer {
   margin-top: 90px;
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
 }
 
 .footer .main-itens-footer {
@@ -308,6 +352,10 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 24px;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .footer .social-medias-icons {
@@ -315,11 +363,19 @@
   align-items: center;
   gap: 34px;
   cursor: pointer;
+  @media (max-width: 1000px) {
+    margin: 32px 0;
+  }
 }
 
 .footer ul {
   display: flex;
   gap: 24px;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
 }
 
 .footer ul li {
@@ -335,4 +391,7 @@
 
   display: flex;
   justify-content: flex-end;
+  @media (max-width: 1000px) {
+    justify-content: center;
+  }
 }
