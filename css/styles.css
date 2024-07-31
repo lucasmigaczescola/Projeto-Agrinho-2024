@@ -293,3 +293,46 @@
   max-width: 600px;
   margin-bottom: 20px;
 }
+
+.footer-wrapper {
+  margin: 0 30px;
+}
+
+.footer {
+  margin-top: 90px;
+}
+
+.footer .main-itens-footer {
+  border-bottom: 2px solid var(--main-green-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.footer .social-medias-icons {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  cursor: pointer;
+}
+
+.footer ul {
+  display: flex;
+  gap: 24px;
+}
+
+.footer ul li {
+  transition: 0.2s;
+  cursor: pointer;
+}
+.footer ul li:hover {
+  font-weight: 600;
+}
+
+.footer .signature-organickMigacz {
+  margin: 24px 0;
+
+  display: flex;
+  justify-content: flex-end;
+}
