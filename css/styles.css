@@ -16,6 +16,19 @@
   --border-gray-color: #d6d6db;
 }
 
+.green-button {
+  background-color: var(--main-green-color);
+  color: var(--main-white-text-color);
+  padding: 8px 24px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.green-button:hover {
+  background-color: var(--main-green-color-hover);
+  cursor: pointer;
+}
+
 .tag-style {
   font-size: 16px;
   letter-spacing: 3px;
@@ -40,19 +53,6 @@
   padding: 40px 50px 140px 50px;
   background-size: cover;
   border-radius: 24px;
-}
-
-.main-container .show-products {
-  background-color: var(--main-green-color);
-  color: var(--main-white-text-color);
-  padding: 8px 24px;
-  border-radius: 8px;
-  transition: 0.2s;
-}
-
-.main-container .show-products:hover {
-  background-color: var(--main-green-color-hover);
-  cursor: pointer;
 }
 
 .navbar {
@@ -242,7 +242,8 @@
 
 .about-us-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1300px;
+  padding: 40px 50px 140px 50px;
   border-radius: 24px;
   background-image: url("../img/about-us-bg-image.png");
   background-repeat: no-repeat;
@@ -267,4 +268,28 @@
 .about-us-container p {
   max-width: 710px;
   line-height: 160%;
+  font-size: 16px;
+}
+
+.cta-container-wrapper {
+  margin: 100px 30px 0 30px;
+}
+
+.cta-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+  padding: 40px 50px 40px 50px;
+  border-radius: 24px;
+  border: 1px solid var(--border-gray-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-container h2 {
+  font-size: 48px;
+  font-weight: normal;
+  max-width: 600px;
+  margin-bottom: 20px;
 }
