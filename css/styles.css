@@ -36,15 +36,17 @@
 }
 
 .main-container-wrapper {
-  display: grid;
-  place-items: center;
-  margin: 0 80px;
+  display: flex;
+  justify-content: center;
+  margin: 32px;
+
+  @media (max-width: 380px) {
+    margin: 16px;
+  }
 }
 
 .main-container {
-  position: relative;
   background: url("../img/hero-background.png");
-  top: 20px;
 
   max-width: 1300px;
   width: 100%;
@@ -54,9 +56,8 @@
   padding: 40px 50px 140px 50px;
   background-size: cover;
   border-radius: 24px;
-
-  @media (max-width: 660px) {
-    padding: 40px 20px 100px 20px;
+  @media (max-width: 440px) {
+    padding: 40px 20px 140px 20px;
   }
 }
 
@@ -65,16 +66,20 @@
   justify-content: space-between;
 
   align-items: center;
-  @media (max-width: 680px) {
+  @media (max-width: 1140px) {
     flex-direction: column;
-
     align-items: flex-start;
+    gap: 24px;
   }
 }
 
 .navbar h2 {
   font-size: 38px;
   color: var(--main-green-color);
+
+  @media (max-width: 680px) {
+    font-size: 30px;
+  }
 }
 
 .navbar ul {
@@ -82,22 +87,18 @@
   gap: 24px;
   @media (max-width: 1140px) {
     flex-direction: column;
+
     gap: 12px;
-  }
-  @media (max-width: 680px) {
-    margin-top: 24px;
-    gap: 24px;
   }
 }
 
 .navbar li {
   color: var(--main-white-text-color);
   cursor: pointer;
-  transition: 0.2s;
 }
 
 .navbar li:hover {
-  font-weight: 600;
+  border-bottom: 1px solid var(--border-gray-color);
 }
 
 .navbar .green-button {
@@ -133,13 +134,16 @@
   }
 }
 
-.categories-container-wrapper {
-  margin: 0 80px;
+.categories-1iner-wrapper {
+  display: flex;
+  margin: 0 32px;
 }
 
 .categories-container {
   max-width: 1208px;
-  margin: 100px auto 0 auto;
+  margin: 0 auto;
+  margin: 100px 32px 0 32px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -155,6 +159,7 @@
 
 .categories-card-container {
   display: flex;
+
   @media (max-width: 1280px) {
     flex-direction: column;
     align-items: center;
@@ -174,7 +179,6 @@
   text-align: center;
   background-size: cover;
   border-radius: 24px;
-  width: 356px;
 }
 
 .categories-container .categories-card p {
@@ -183,7 +187,7 @@
 }
 
 .products-container-wrapper {
-  margin: 0 80px;
+  margin: 32px;
 }
 
 .products-container {
@@ -207,6 +211,9 @@
   @media (max-width: 1000px) {
     grid-template-columns: auto auto;
   }
+  @media (max-width: 490px) {
+    grid-template-columns: auto;
+  }
 }
 
 .products-container .product-card {
@@ -228,12 +235,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 570px) {
+    flex-direction: column;
+  }
 }
 
 .product-card-header .cart-icon {
   background-color: var(--green-color-with-opacity);
   padding: 12px 12px;
   border-radius: 8px;
+  @media (max-width: 570px) {
+    padding: 12px 68px;
+    margin-top: 8px;
+  }
 }
 
 .product-image {
@@ -247,6 +261,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 570px) {
+    flex-direction: column;
+  }
 }
 
 .product-card .price-and-name h3 {
@@ -258,6 +276,10 @@
   border-radius: 8px;
   color: var(--main-white-text-color);
   padding: 10px 12px;
+
+  @media (max-width: 570px) {
+    padding: 10px 51px;
+  }
 }
 
 .products-container .show-more-bar {
@@ -277,13 +299,13 @@
 }
 
 .about-us-container-wrapper {
-  margin: 100px 80px 0 80px;
+  margin: 100px 32px 20px 32px;
 }
 
 .about-us-container {
   max-width: 1300px;
 
-  padding: 40px 50px 140px 50px;
+  padding: 160px 50px 200px 50px;
   border-radius: 24px;
   background-image: url("../img/about-us-bg-image.png");
   background-repeat: no-repeat;
@@ -295,9 +317,10 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 542px;
-
-  @media (max-width: 1500px) {
+  @media (max-width: 680px) {
+    text-align: left;
+    align-items: flex-start;
+    padding: 80px 20px 100px 20px;
   }
 }
 
@@ -306,6 +329,9 @@
   font-size: 48px;
   max-width: 600px;
   margin-bottom: 24px;
+  @media (max-width: 680px) {
+    font-size: 38px;
+  }
 }
 
 .about-us-container p {
@@ -315,7 +341,7 @@
 }
 
 .cta-container-wrapper {
-  margin: 100px 80px 0 80px;
+  margin: 100px 32px 20px 32px;
 }
 
 .cta-container {
@@ -341,10 +367,20 @@
   font-weight: normal;
   max-width: 600px;
   margin-bottom: 20px;
+
+  @media (max-width: 680px) {
+    font-size: 38px;
+  }
+}
+
+.cta-container .cta-photo {
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 .footer-wrapper {
-  margin: 0 80px;
+  margin: 32px;
 }
 
 .footer {
@@ -387,11 +423,10 @@
 }
 
 .footer ul li {
-  transition: 0.2s;
   cursor: pointer;
 }
 .footer ul li:hover {
-  font-weight: 600;
+  border-bottom: 1px solid var(--border-gray-color);
 }
 
 .footer .signature-organickMigacz {
