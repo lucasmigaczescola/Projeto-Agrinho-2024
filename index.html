@@ -218,13 +218,75 @@
     </div>
     <div class="cta-container-wrapper">
       <div class="cta-container" id="cta">
-        <div class="infos-cta">
-          <span class="tag-style">Contato</span>
-          <h2>Deseja se tornar nosso afiliado?</h2>
-          <button class="green-button">Contate-nos pelo WhatsApp!</button>
+        <div class="complete-form">
+          <div class="header-cta">
+            <span class="tag-style">Contato</span>
+            <h2>Deseja se tornar nosso afiliado?</h2>
+          </div>
+          <form
+            class="cta-form"
+            id="message-form"
+            action="https://api.staticforms.xyz/submit"
+            method="post"
+          >
+            <div class="name-and-email-container">
+              <div class="name-container">
+                <label for="input-name">Nome</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="name"
+                  id="input-name-id"
+                  required
+                />
+              </div>
+              <div class="email-container">
+                <label for="input-email">E-Mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="email"
+                  id="input-email-id"
+                  required
+                />
+              </div>
+            </div>
+            <div class="message-container">
+              <label for="input-message">Mensagem</label>
+              <textarea
+                name="message"
+                class="input-message"
+                id="input-message-id"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+            <input
+              type="hidden"
+              name="accessKey"
+              value="70cde25c-0250-4e63-a72a-46fadfec32fb"
+            />
+            <input
+              type="hidden"
+              name="redirectTo"
+              value="http://localhost:5500/"
+            />
+            <input
+              type="submit"
+              class="green-button"
+              id="submit-message-id"
+              value="Enviar mensagem"
+            />
+          </form>
         </div>
-        <div>
-          <img src="./img/cta-photo.png" class="cta-photo" />
+        <div class="contact-us-whatsapp">
+          <h3>Possui alguma dúvida? Entre em contato conosco!</h3>
+
+          <a href="">+55 42 99999-9999</a>
+
+          <a href="mailto:lucas.migacz@escola.pr.gov.br"
+            >lucas.migacz@escola.pr.gov.br</a
+          >
         </div>
       </div>
     </div>

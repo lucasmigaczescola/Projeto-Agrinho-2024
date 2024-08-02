@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+textarea {
+  resize: none;
+}
+
 :root {
   --main-green-color: #138e53;
   --main-green-color-hover: #14834d;
@@ -357,14 +361,22 @@ html {
   border-radius: 24px;
   border: 1px solid var(--border-gray-color);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  @media (max-width: 1000px) {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
+  gap: 60px;
+}
+
+.cta-container .complete-form {
+  border-right: 1px solid var(--border-gray-color);
+}
+
+.cta-form {
+  max-width: 400px;
+  width: 100%;
+}
+
+.cta-form .name-and-email-container {
+  display: flex;
+  gap: 30px;
 }
 
 .cta-container h2 {
@@ -378,10 +390,52 @@ html {
   }
 }
 
-.cta-container .cta-photo {
-  @media (max-width: 500px) {
-    display: none;
-  }
+.cta-form .name-container,
+.cta-form .email-container,
+.cta-form .message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cta-container .cta-form .name,
+.cta-container .cta-form .email {
+  border: 1px solid var(--border-gray-color);
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 8px 8.5px;
+  max-width: 194px;
+  width: 100%;
+}
+
+.cta-container .cta-form .input-message {
+  border: 1px solid var(--border-gray-color);
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 8px;
+  max-width: 370px;
+  width: 100%;
+}
+
+.cta-container .cta-form .green-button {
+  max-width: 387px;
+  width: 100%;
+  padding: 8px;
+}
+
+.cta-container .contact-us-whatsapp {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cta-container .cta-container .contact-us-whatsapp h3 {
+  font-size: 36px;
+  font-weight: normal;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .footer-wrapper {
