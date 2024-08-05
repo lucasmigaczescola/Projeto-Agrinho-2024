@@ -54,7 +54,7 @@ textarea {
 }
 
 .main-container {
-  background-image: url("../img/hero-background.jpg");
+  background-image: url("../img/backgrounds/hero-background.png");
 
   max-width: 1300px;
   width: 100%;
@@ -178,7 +178,7 @@ textarea {
 }
 
 .categories-container .categories-card-organic {
-  background: url("../img/organic-foods.png");
+  background: url("../img/backgrounds/organic-foods.png");
   background-repeat: no-repeat;
   height: 400px;
   padding: 20px;
@@ -192,7 +192,7 @@ textarea {
   border-radius: 24px;
 }
 .categories-container .categories-card-handmade {
-  background: url("../img/handmade-products.png");
+  background: url("../img/backgrounds/handmade-products.png");
   background-repeat: no-repeat;
   height: 400px;
   padding: 20px;
@@ -206,7 +206,7 @@ textarea {
   border-radius: 24px;
 }
 .categories-container .categories-card-fruits {
-  background: url("../img/fruits-products.png");
+  background: url("../img/backgrounds/fruits-products.png");
   background-repeat: no-repeat;
   height: 400px;
   padding: 20px;
@@ -346,9 +346,10 @@ textarea {
 
   padding: 160px 50px 200px 50px;
   border-radius: 24px;
-  background-image: url("../img/about-us-bg-image.png");
+  background-image: url("../img/backgrounds/about-us-bg-image.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: var(--main-white-text-color);
   text-align: center;
   display: flex;
