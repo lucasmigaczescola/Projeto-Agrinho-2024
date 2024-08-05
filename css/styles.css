@@ -54,16 +54,17 @@ textarea {
 }
 
 .main-container {
-  background: url("../img/hero-background.png");
+  background-image: url("../img/hero-background.jpg");
 
   max-width: 1300px;
   width: 100%;
-
+  background-position: center;
   color: var(--main-white-text-color);
   background-repeat: no-repeat;
   padding: 40px 50px 140px 50px;
   background-size: cover;
   border-radius: 24px;
+
   @media (max-width: 440px) {
     padding: 40px 20px 140px 20px;
   }
@@ -176,8 +177,8 @@ textarea {
   gap: 16px;
 }
 
-.categories-container .categories-card {
-  background: url("../img/categoriesimageTest.png");
+.categories-container .categories-card-organic {
+  background: url("../img/organic-foods.png");
   background-repeat: no-repeat;
   height: 400px;
   padding: 20px;
@@ -187,10 +188,39 @@ textarea {
   color: var(--main-white-text-color);
   text-align: center;
   background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
+.categories-container .categories-card-handmade {
+  background: url("../img/handmade-products.png");
+  background-repeat: no-repeat;
+  height: 400px;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-white-text-color);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
+.categories-container .categories-card-fruits {
+  background: url("../img/fruits-products.png");
+  background-repeat: no-repeat;
+  height: 400px;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-white-text-color);
+  text-align: center;
+  background-size: cover;
+  background-position: right;
   border-radius: 24px;
 }
 
-.categories-container .categories-card p {
+.categories-container p {
   font-size: 20px;
   max-width: 380px;
 }
@@ -363,10 +393,24 @@ textarea {
   display: flex;
 
   gap: 60px;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 }
 
 .cta-container .complete-form {
   border-right: 1px solid var(--border-gray-color);
+  @media (max-width: 1200px) {
+    border-right: none;
+    border-bottom: 1px solid var(--border-gray-color);
+    padding-bottom: 84px;
+  }
+}
+
+.cta-container .header-cta h2 {
+  @media (max-width: 1380px) {
+    font-size: 36px;
+  }
 }
 
 .cta-form {
@@ -383,9 +427,11 @@ textarea {
   font-size: 48px;
   font-weight: normal;
   max-width: 600px;
-  margin-bottom: 20px;
+  margin: 0 20px 20px 0;
 
   @media (max-width: 680px) {
+    max-width: 200px;
+    width: 100%;
     font-size: 38px;
   }
 }
@@ -431,11 +477,24 @@ textarea {
   gap: 2px;
 }
 
-.cta-container .cta-container .contact-us-whatsapp h3 {
-  font-size: 36px;
+.cta-container .contact-us-whatsapp h3 {
+  font-size: 32px;
   font-weight: normal;
   width: 100%;
   margin-bottom: 30px;
+  @media (max-width: 1380px) {
+    font-size: 28px;
+  }
+}
+
+.cta-container .contact-us-whatsapp a {
+  border: 1px solid var(--border-gray-color);
+  border-radius: 24px;
+  padding: 4px 14px;
+  margin-bottom: 4px;
+  max-width: fit-content;
+  width: 100%;
+  overflow: hidden;
 }
 
 .footer-wrapper {
