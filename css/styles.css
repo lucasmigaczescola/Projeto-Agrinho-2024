@@ -102,12 +102,12 @@ textarea {
   }
 }
 
-.navbar li {
+.navbar a {
   color: var(--main-white-text-color);
   cursor: pointer;
 }
 
-.navbar li:hover {
+.navbar a:hover {
   border-bottom: 1px solid var(--border-gray-color);
 }
 
@@ -560,10 +560,11 @@ textarea {
   }
 }
 
-.footer ul li {
+.footer ul a {
   cursor: pointer;
+  color: black;
 }
-.footer ul li:hover {
+.footer ul a:hover {
   border-bottom: 1px solid var(--border-gray-color);
 }
 
