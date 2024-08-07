@@ -59,7 +59,7 @@ textarea {
 
   max-width: 1300px;
   width: 100%;
-  background-position: center;
+  background-position: bottom;
   color: var(--main-white-text-color);
   background-repeat: no-repeat;
   padding: 40px 50px 140px 50px;
@@ -178,8 +178,8 @@ textarea {
   gap: 16px;
 }
 
-.categories-container .categories-card-organic {
-  background: url("../img/backgrounds/organic-foods.png");
+.categories-container .categories-card-fruits-and-vegetables {
+  background: url("../img/backgrounds/fruits-and-vegetables.png");
   background-repeat: no-repeat;
   height: 400px;
   padding: 20px;
@@ -206,8 +206,8 @@ textarea {
   background-position: center;
   border-radius: 24px;
 }
-.categories-container .categories-card-fruits {
-  background: url("../img/backgrounds/fruits-products.png");
+.categories-container .categories-card-animal-origin {
+  background: url("../img/backgrounds/animal-origin-background.png");
   background-repeat: no-repeat;
   height: 400px;
   padding: 20px;
@@ -257,7 +257,7 @@ textarea {
   display: grid;
   grid-template-columns: auto auto auto auto;
   place-items: center;
-  gap: 20px;
+  gap: 10px;
   @media (max-width: 1000px) {
     grid-template-columns: auto auto;
     place-content: center;
@@ -275,6 +275,8 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   transition: 0.2s;
+  max-width: 290px;
+  width: 100%;
 }
 
 .products-container .product-card:hover {
