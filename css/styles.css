@@ -279,6 +279,9 @@ textarea {
   width: 100%;
   max-height: 460px;
   height: 100%;
+  @media (max-width: 490px) {
+    max-height: 580px;
+  }
 }
 
 .products-container .product-card:hover {
@@ -300,7 +303,9 @@ textarea {
   padding: 12px 12px;
   border-radius: 8px;
   @media (max-width: 570px) {
-    padding: 12px 68px;
+    width: 100%;
+    max-height: 41px;
+    height: 100%;
     margin-top: 8px;
   }
 }
@@ -332,7 +337,11 @@ textarea {
   padding: 10px 12px;
 
   @media (max-width: 570px) {
-    padding: 10px 51px;
+    overflow: hidden;
+    text-wrap-mode: nowrap;
+    text-wrap: nowrap;
+    width: 100%;
+    text-align: center;
   }
 }
 
