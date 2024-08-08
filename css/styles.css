@@ -31,11 +31,15 @@ textarea {
   padding: 8px 24px;
   border-radius: 8px;
   transition: 0.2s;
+  cursor: pointer;
+}
+
+.green-button a {
+  color: var(--main-white-text-color);
 }
 
 .green-button:hover {
   background-color: var(--main-green-color-hover);
-  cursor: pointer;
 }
 
 .tag-style {
@@ -427,6 +431,7 @@ textarea {
 }
 
 .cta-container .complete-form {
+  margin-top: 6px;
   border-right: 1px solid var(--border-gray-color);
   @media (max-width: 1200px) {
     border-right: none;
