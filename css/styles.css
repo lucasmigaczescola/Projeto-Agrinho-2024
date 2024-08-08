@@ -66,9 +66,34 @@ textarea {
   background-position: bottom;
   color: var(--main-white-text-color);
   background-repeat: no-repeat;
-  padding: 40px 50px 140px 50px;
   background-size: cover;
   border-radius: 24px;
+  overflow: hidden;
+}
+
+.inner-main-container {
+  padding: 40px 50px 140px 50px;
+  background: linear-gradient(
+    1deg,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+
+  @media (max-width: 1140px) {
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+  }
+
+  @media (max-width: 440px) {
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+  }
 
   @media (max-width: 440px) {
     padding: 40px 20px 140px 20px;

@@ -6,9 +6,9 @@ Este projeto foi inspirado pelos princípios e objetivos do Agrinho, uma ação 
 
 O protótipo que eu desenvolvi permitirá que agricultores rurais vendam suas mercadorias diretamente aos consumidores finais, eliminando intermediários que frequentemente reduzem a renda final do pequeno/médio agricultor. Isso não apenas beneficia a agricultura, mas também promove um consumo mais sustentável e fortalece a economia local, proporcionando aos consumidores finais acesso direto a produtos frescos.
 
-Bem como o Agrinho, eu senti um compromisso com a sociedade e com a valorização do trabalho rural, devido a minha família inteira e a origem dela ser de pequenos agricultores. E, portanto, é isso que nossa plataforma atingirá. Junte-se a nós nesta caminhada, ajudando-nos a combinar o campo e a cidade num futuro mais sustentável.
+Bem como o Agrinho, eu senti um compromisso com a sociedade e com a valorização do trabalho rural, devido a minha família inteira e a origem dela ser de pequenos agricultores. E, portanto, é isso que o protótipo atingirá. Junte-se a nós nesta caminhada, ajudando-nos a combinar o campo e a cidade num futuro mais sustentável.
 
-Projeto desenvolvido no 3B NEM do Colégio Estadual São Mateus, para participar do concurso AGRINHO-2024, sob orientação do professor Enrico Marcelo Miroto.
+Projeto desenvolvido no 3B NEM do Colégio Estadual São Mateus, para participar do concurso AGRINHO-2024, pelo aluno Lucas Andre Guimarães Migacz, sob orientação do professor Enrico Marcelo Miroto.
 
 O site é construído usando **HTML** e **CSS**.
 
