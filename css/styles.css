@@ -316,6 +316,10 @@ textarea {
 .products-container .product-card:hover {
   transform: scale(1.02);
   cursor: pointer;
+
+  @media (max-width: 500px) {
+    transform: none;
+  }
 }
 
 .product-card-header {
@@ -388,6 +392,10 @@ textarea {
 .products-container .show-more-bar:hover {
   transform: scale(1.02);
   cursor: pointer;
+
+  @media (max-width: 500px) {
+    transform: none;
+  }
 }
 
 .about-us-container-wrapper {
