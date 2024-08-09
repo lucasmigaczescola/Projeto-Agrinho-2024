@@ -23,6 +23,7 @@ textarea {
   --green-color-with-opacity: #138e5310;
   --main-white-text-color: #ffffff;
   --border-gray-color: #d6d6db;
+  --border-gray-color-hover: #7f7f8a;
 }
 
 .green-button {
@@ -137,7 +138,7 @@ textarea {
 }
 
 .navbar li:hover {
-  border-bottom: 1px solid var(--border-gray-color);
+  text-decoration: underline;
 }
 
 .navbar .green-button {
@@ -578,6 +579,11 @@ textarea {
   max-width: fit-content;
   width: 100%;
   overflow: hidden;
+  transition: 0.2s;
+}
+
+.cta-container .contact-us-whatsapp a:hover {
+  border: 1px solid var(--border-gray-color-hover);
 }
 
 .footer-wrapper {
@@ -628,7 +634,7 @@ textarea {
   color: black;
 }
 .footer ul a:hover {
-  border-bottom: 1px solid var(--border-gray-color);
+  text-decoration: underline;
 }
 
 .footer .signature-organickMigacz {
