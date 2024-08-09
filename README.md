@@ -17,7 +17,7 @@ O site é construído usando **HTML** e **CSS**.
 - **Página inicial**: Apresenta o site e oferece uma visão geral das principais seções e funcionalidades disponíveis.
 - **Responsividade**: O layout é responsivo, garantindo uma boa experiência em dispositivos móveis e desktops.
 - **Acessibilidade**: Esforços foram feitos para garantir que o site seja acessível a todos os usuários, como a presença de textos alternativos em todas imagens .
-- **Acessibilidade**: Todas imagens e textos foram criadas por mim para atender os critérios de originalidade do agrinho.
+- **Originalidade**: Todas imagens e textos foram criadas por mim para atender os critérios de originalidade do agrinho.
 
 ## Tecnologias Utilizadas
 
